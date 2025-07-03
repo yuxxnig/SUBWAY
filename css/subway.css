@@ -1,0 +1,421 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+img {display: block;}
+body {font-family: 'GmarketSansMedium';}
+
+/* html, body {height: 100%;} */
+
+
+
+/* style start */
+.centerbox {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative; /* 기준 요소로 설정 */
+}
+
+header h1 {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .loginbox {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    top: 20px;
+    right: 100px;   
+    margin: 20px;
+    gap: 10px;
+}
+
+header .loginbox i {
+    position: absolute;
+    right: 117px;
+    top: 2px;
+    color: #999;
+}
+
+header .loginbox a {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav ul {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header .gnb li {
+    font-size: 18px;
+    font-family: 'GmarketSansMedium';
+}
+
+header .gnb li a {
+    padding: 0px 50px;
+    display: block;
+    color: #000;
+}
+
+#visual {
+    width: 100%;
+    height: 420px;
+    background: url(../images/banner.png) center top no-repeat;
+    /* background-size: cover; */
+}
+
+#menu_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+#menu_box .menu_box1 {
+    width: 308px;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCC300;
+    font-size: 25px;
+    font-family: 'GmarketSansBold';
+}
+
+#menu_box .menu_box2 {
+    width: 308px;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #008B3A;
+    font-size: 25px;
+    font-family: 'GmarketSansBold';
+    margin-left: 20px;
+}
+
+#menu_box a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 10px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+#menu_box .menu_box2 a {
+    color: #fff;
+}
+
+#menu_box img {
+   height: auto;
+   position: absolute;
+   margin-left: -40px;
+}
+
+#section_box .title_box {
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+.title_box h2 {
+    color: #000;
+    font-size: 40px;
+    font-family: 'GmarketSansBold';
+    margin-bottom: 15px
+}
+
+#section_box .title_box h2 .highlight {
+    color: #F95F00;
+    font-family: 'GmarketSansBold';
+}
+
+.title_box p {
+    color: #737373;
+}
+
+#section_box .title_box p .highlight {
+    color: #F95F00;
+    font-family: 'GmarketSansBold';
+}
+
+.content_box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'GmarketSansmedium';
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tap {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    margin-right: 50px;
+}
+
+.tap .more_box {
+    display: flex;
+    gap: 5px;
+}
+
+.tap .btn_more {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.tap .btn_icon {
+    margin-bottom: 5px
+}
+
+.tap .btn_icon2 {
+    position: absolute; 
+    right: -15px;
+    top: -20px;
+}
+
+.text_box {
+    margin-top: 50px;
+}
+
+.content_box img {
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.content_box h3 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.content_box p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 60px;
+    color: #555;
+}
+
+.content_box .content1 {
+    width: 400px;
+    height: 400px;
+    background: #FFECAA;
+    border-radius: 20px;
+}
+
+.content_box .content2 {
+    width: 400px;
+    height: 400px;
+    background: #FFD9C2;
+    border-radius: 20px;
+}
+
+.content_box .content3 {
+    width: 400px;
+    height: 400px;
+    background: #D0E8B0;
+    border-radius: 20px;
+}
+
+.btn {
+    width: 145px;
+    height: 32px;
+    background: #fff;
+    color: #FCC300;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    padding-top:5px;
+    display: block;
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+.content2 .btn {
+    width: 145px;
+    height: 32px;
+    background: #fff;
+    color: #FCC300;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    padding-top:5px;
+    display: block;
+    margin-left: 240px;
+    margin-top: -6px;
+}
+
+.content_box .btn .highlight{
+    color: #008B3A;
+}
+
+/* #section2 */
+
+#section2 .title_box {
+    text-align: center;
+    margin-top: 180px;
+}
+
+section#section2 .title_box h2 .highlight {
+    color: #008B3A;
+}
+
+section#section2 .centerbox {
+    width: 1200px;
+    margin-top: 30px;
+}
+
+section#section2 .content_box {
+    display: flex;
+    height: 400px;
+    border-radius: 20px;
+}
+
+section#section2 .text_box {
+    background: #FCC300;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+#section2 .dc_box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 120px;
+    height: 37px;
+    top: 40px;
+}
+ 
+#section2 .dc_box p {
+    color: #FCC300;
+    font-size: 14px;
+    font-family: 'GmarketSansbold';
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+#section2 .text_box h4 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#section2 .text_box p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+    color: #555;
+} 
+
+#section2 .text_box img {
+    margin-bottom: 30px;
+}
+
+#section2 .content_box .pick_box {
+    border: 1px solid #000;
+}
+
+#section2 .content_box .pick_box .img_box {
+    width: 1000px;
+}
+
+#section2 .tap {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    margin-top: 60px;
+    margin-right: -8px;
+}
+
+#section2 .tap .more_box {
+    display: flex;
+    gap: 5px;
+}
+
+#section2 .tap .btn_more {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+
+#section2 .tap .btn_icon {
+    margin-bottom: 5px
+}
+
+#section2 .tap .btn_icon2 {
+    position: absolute; 
+    right: -15px;
+    top: -20px;
+}
+
+#section2 .pick_box {
+    
+}
+
+#section3 .title_box {
+    text-align: center;
+    margin-top: 180px;
+}
+section #section3 .title_box h2 .highlight {
+    color: #FCC300;
+}
+
+#section3 .notice_box {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 280px;
+    background: #FDE695;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+#section3 .notice_box .notice a {
+    border: 1px solid #000;
+}
+
+#section3 .notice_box .date p {
+    border: 1px solid #000;
+}
+
